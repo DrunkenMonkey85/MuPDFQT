@@ -96,12 +96,18 @@ file as an attachment.
 #Compiling under MAC
 
 1. Update all submodules
+
     git submodule update --init 
+    
 2. Change to the directory mupdf 
+
     cd mupdf
 3. Make 
+
     make HAVE_X11=no build=release 
     make HAVE_X11=no build=debug
+    
 4. Libraries can be found in the build directory 
+
     build/release/libmupdf.a
     build/release/libthird.a
